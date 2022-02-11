@@ -1,6 +1,6 @@
 import cloudscraper
 from bs4 import BeautifulSoup
-from ctypes import windll
+import ctypes
 from gc import collect
 from loguru import logger
 from names import get_first_name
@@ -14,6 +14,7 @@ from time import sleep
 from urllib3 import disable_warnings
 from uuid import uuid4
 
+windll = ctypes.windll
 disable_warnings()
 system("cls")
 def clear(): return system('cls')
