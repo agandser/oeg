@@ -14,7 +14,7 @@ from time import sleep
 from urllib3 import disable_warnings
 from uuid import uuid4
 
-windll = ctypes.windll
+windll = ctypes.WinDLL
 disable_warnings()
 system("cls")
 def clear(): return system('cls')
